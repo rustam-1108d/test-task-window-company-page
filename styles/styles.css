@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #484848;
+  background: #e1f0f8;
+
+  /* margin: 0;
+  padding: 0; */
+}
+
+header {
+  /* width: 1145px; */
+  max-width: 1145px;
+  background-color: #ffffff;
+
+  /* min-width: 320px; */
+}
+
+
+/* color: #484745; phone and time */
+
+
+/* ================================
+  NAVIGATION BAR
+================================ */
+.navbar-nav {
+  display: flex;
+  max-width: 100%;
+  /* flex-wrap: wrap; */
+
+  background-color: red; /* TESTING */
+}
+
+.nav-item {
+  flex: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 57px;
+  list-style-type: none;
+
+  background-color: yellow; /* TESTING */
+}
+
+.nav-item:not(:last-child) {
+  border-right: 1px solid #5f6973;
+}
+
+.nav-item:hover {
+  background-color: #7bc3d5;
+}
+
+.nav-item:hover .nav-link {
+  color: #ffffff;
+}
+
+.nav-link {
+  font-size: 24px;
+  color: #5f6973;
+  text-decoration: none;
+  /* line-height: 57px; */
+}
+/* ================================
+  END OF NAVIGATION BAR
+================================ */
