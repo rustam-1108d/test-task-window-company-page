@@ -115,6 +115,13 @@ font-size: 23px;
   color: #5f6973;
   text-decoration: none;
   /* line-height: 57px; */
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 
