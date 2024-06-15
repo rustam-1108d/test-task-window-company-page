@@ -114,6 +114,34 @@ font-size: 23px;
   text-decoration: none;
   /* line-height: 57px; */
 }
+
+
 /* ================================
-  END OF NAVIGATION BAR
+  TITLE
 ================================ */
+.main {
+  max-width: 1145px;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+.title {
+  color: #4b4b4b;
+  line-height: 1.2;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  /* background-color: blue; */
+}
+
+.title-heading {
+  font-size: 64px;
+  font-weight: normal;
+  /* background-color: blue; */
+  /* line-height: 1.2; */
+}
+
+.title-description {
+  font-size: 26px;
+  /* line-height: 1.2; */
+  /* background-color: orchid; */
+}
