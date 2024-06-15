@@ -8,6 +8,7 @@ body {
   color: #484848;
   background: #e1f0f8;
 
+  box-sizing: border-box;
   /* margin: 0;
   padding: 0; */
 }
@@ -15,14 +16,59 @@ body {
 header {
   /* width: 1145px; */
   max-width: 1145px;
+  margin: 0 auto;
   background-color: #ffffff;
-
+  /* padding: 25px; */
   /* min-width: 320px; */
 }
 
+.header-top {
+  display: flex;
+  max-width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+
+  /* padding: auto; */
+  padding: 15px 25px 20px;
+}
+
+.calculate-cost-btn {
+font-size: 23px;
+  color: #f36240;
+  text-decoration: underline; /* 2px? */
+  text-underline-offset: 4px; /* maybe */
+  font-variant: small-caps;
+  margin-bottom: 15px;
+  letter-spacing: 0.05em;
+  /* flex: 1;
+  text-align: right; */
+  /* padding-right: 50px; */
+  /* margin-left: 120px; */
+  /* padding-right: 30px; */
+  /* font-weight: 600; */
+}
 
 /* color: #484745; phone and time */
+.contact-info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
+.working-hours {
+  font-size: 16px;
+  color: #484745;
+  text-align: right;
+  margin-right: 4px;
+  margin-bottom: 2px;
+}
+
+.phone-number {
+  font-size: 31px;
+  color: #484745;
+}
 
 /* ================================
   NAVIGATION BAR
@@ -30,9 +76,9 @@ header {
 .navbar-nav {
   display: flex;
   max-width: 100%;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 
-  background-color: red; /* TESTING */
+  /* background-color: red; */ /* TESTING */
 }
 
 .nav-item {
@@ -47,7 +93,7 @@ header {
   height: 57px;
   list-style-type: none;
 
-  background-color: yellow; /* TESTING */
+  /* background-color: yellow; */ /* TESTING */
 }
 
 .nav-item:not(:last-child) {
