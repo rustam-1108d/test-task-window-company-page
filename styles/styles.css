@@ -247,6 +247,9 @@ font-size: 23px;
   /* min-width: 500px; */
 }
 
+/* ================================
+  PRODUCT-BOX
+================================ */
 .product-box {
   box-sizing: border-box;
   width: 100%;
@@ -300,9 +303,9 @@ font-size: 23px;
   /* text-align: center; */
 }
 
-.product-box-selection {
-  /* background-color: #d3ffe1; */
-}
+/* .product-box-selection {
+  background-color: #d3ffe1;
+} */
 
 .feature-list {
   list-style-type: none;
@@ -401,14 +404,85 @@ font-size: 23px;
   /* display: inline; */
 }
 
+/* ================================
+  INFORMATION-BOX
+================================ */
+.information-container {
+  margin-top: 25px;
+  box-sizing: border-box;
+  width: 100%;
 
-
-.bottom-box {
-  background: yellow;
-  width: 100px;
-  height: 500px;
-  border: red 2px dotted;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 30px 25px;
+  /* height: 500px; */
+  /* border: red 2px dotted; */
+  min-height: 480px;
 }
+
+.information-title {
+  font-size: 26px;
+  font-weight: normal;
+  color: #484848;
+}
+
+.lamination-benefits, .color-process {
+  /* background-color: #ffffff; */
+  /* padding: 20px; */
+  /* border-radius: 5px; */
+  /* margin-bottom: 20px; */
+  padding-top: 20px;
+  /* margin-bottom: 10px; */
+  padding-bottom: 10px;
+}
+
+.benefit {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  gap: 0px;
+  margin-bottom: 10px;
+}
+
+.benefit-icon {
+  /* width: 50px;
+  height: 50px; */
+  margin-right: 20px;
+}
+
+.benefit-text, .step-text {
+  font-size: 14px;
+}
+
+.benefit-text{
+  padding-left: 15px;
+}
+
+.step-number {
+  font-size: 20px;
+  color: #484848;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  border: 2px solid #484848;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+  vertical-align: middle;
+
+  /* text-align: center;
+  line-height: 31px; */
+}
+
+
 
 .reviews-title {
   display: block;
