@@ -351,20 +351,39 @@ font-size: 23px;
 }
 
 .color-option {
+  position: relative;
   width: 60px;
   height: 60px;
-  /* border: 2px solid #ccc; */
   border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
   box-sizing: border-box;
 }
 
-.color-1 { background-color: #8B4513; }
+.checkmark {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32px;
+  height: 18px;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transform-origin: center center;
+}
+
+.color-option.selected .checkmark {
+  display: block;
+}
+
+/* .color-1 { background-color: #8B4513; }
 .color-2 { background-color: #D2B48C; }
 .color-3 { background-color: #F5F5DC; }
 .color-4 { background-color: #8B0000; }
 .color-5 { background-color: #CD853F; }
 .color-6 { background-color: #A0522D; }
-.color-7 { background-color: #A0522D; }
+.color-7 { background-color: #A0522D; } */
 
 
 .color-info {
@@ -486,7 +505,9 @@ font-size: 23px;
   line-height: 31px; */
 }
 
-
+/* ================================
+  REVIEWS-BOX
+================================ */
 .review-container {
   /* padding: 20px; */
   margin-top: 35px;
