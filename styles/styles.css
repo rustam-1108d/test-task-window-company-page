@@ -395,6 +395,10 @@ font-size: 23px;
   font-weight: normal;
 }
 
+.cta-button:hover {
+  background-color: #d63a2b;
+}
+
 .cta-subtext {
   margin-top: 11px;
   color: #8a8a8a;
@@ -483,16 +487,115 @@ font-size: 23px;
 }
 
 
-
-.reviews-title {
-  display: block;
+.review-container {
+  /* padding: 20px; */
+  margin-top: 35px;
+  margin-bottom: 95px;
 }
 
-.reviews-box {
-  background: yellow;
-  width: 100px;
-  height: 500px;
-  border: red 2px dotted;
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.review-title {
+  font-size: 26px;
+  font-weight: normal;
+  color: #484848;
+}
+
+.review-more-link {
+  font-size: 16px;
+  color: #eb5825;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.review-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.reviewer-info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.reviewer-name {
+  font-size: 16px;
+  color: #484848;
+}
+
+.reviewer-contract {
+  font-size: 14px;
+  color: #8a8a8a;
+  margin-top: 4px;
+}
+
+.review-date {
+  font-size: 14px;
+  color: #8a8a8a;
+  margin-bottom: 10px;
+}
+
+.review-rating {
+  margin-bottom: 10px;
+}
+
+.star {
+  color: #e74c3c;
+  font-size: 1.5em;
+}
+
+.review-text {
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.read-more-link {
+  /* display: inline-block;
+  margin-bottom: 20px; */
+  color: #eb5825;
+  font-size: 16px;
+  text-decoration: underline dashed 1px;
+  text-underline-offset: 3.5px;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+
+
+.leave-review-button {
+  /* margin: 45px 0 0; */
+  /* margin: 0 auto; */
+  margin-top: 35px;
+  margin-bottom: 9px;
+  max-width: 163px;
+  min-height: 43px;
+  width: 163px;
+  border-radius: 5px;
+  background: #eb5825;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 43px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  /* margin-bottom: 9px; */
+  display: block;
+  /* height: 43px; */
+  position: relative;
+  font-weight: normal;
+}
+
+.leave-review-button:hover {
+  background-color: #d63a2b;
 }
 
 
