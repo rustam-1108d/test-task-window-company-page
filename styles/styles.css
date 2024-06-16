@@ -155,6 +155,40 @@ font-size: 23px;
   /* background-color: orchid; */
 }
 
+@media (max-width: 950px) {
+  .title-heading {
+    font-size: 44px;
+    font-weight: normal;
+  }
+  .title-description {
+    font-size: 18px;
+  }
+}
+
+
+/* ================================
+  FLEX CONTAINER FOR CONTENT
+================================ */
+.flex-container {
+  display: flex;
+  /* width: 100%; */
+  /* background-color: #7bc3d5; */
+  flex-wrap: wrap;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* padding: 20px; */
+}
+
+
+
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+} */
 
 /* ================================
   RECOMMENDATIONS
@@ -167,6 +201,8 @@ font-size: 23px;
   /* box-sizing: border-box; */ /* moved to * selector */
   height: 469px;
   width: 240px;
+  margin-right: 25px;
+  /* flex: 1; */
 }
 
 .recommendations-title {
@@ -204,4 +240,203 @@ font-size: 23px;
 
 .recommendations-link:hover {
   color: #eb5825;
+}
+
+.content-container{
+  flex: 1;
+  /* min-width: 500px; */
+}
+
+.product-box {
+  box-sizing: border-box;
+  width: 100%;
+
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 25px; /* measures right */
+  /* height: 500px; */
+  /* border: red 2px dotted; */
+  min-height: 610px;
+}
+
+/* GOOD */
+.product-box-title {
+  font-size: 26px;
+  font-weight: normal;
+  /* background-color: #7bc3d5; */
+}
+
+.product-box-content {
+  margin: 32px auto 0;
+  /* background-color: moccasin; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+}
+
+.product-box-image-container {
+  min-width: 354px;
+  /* width: 354px; */
+  padding-left: 57px;
+  /* float: left; */
+  position: relative;
+  /* width: 198px; */
+  /* background-color: yellow; */
+}
+
+.product-image {
+  position: relative;
+  width: 198px;
+  /* height: 352px; */
+  /* background-color: #eb5825; */
+}
+
+.image-caption {
+  font-size: 18px;
+  color: #a6a6a6;
+  margin-left: 33px;
+  margin-top: 40px;
+  /* margin: 41px 0 0; */
+  /* text-align: center; */
+}
+
+.product-box-selection {
+  /* background-color: #d3ffe1; */
+}
+
+.feature-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.feature-list li::before {
+  content: '\2022';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #eb5825;
+}
+
+.feature-item {
+  font-size: 14px;
+  list-style-type: none;
+}
+
+.feature-item:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.color-selection-title {
+  font-size: 20px;
+  margin-top: 39px;
+  font-weight: normal;
+}
+
+
+.color-options {
+  margin-top: 22px;
+  display: flex;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+
+.color-option {
+  width: 60px;
+  height: 60px;
+  /* border: 2px solid #ccc; */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.color-1 { background-color: #8B4513; }
+.color-2 { background-color: #D2B48C; }
+.color-3 { background-color: #F5F5DC; }
+.color-4 { background-color: #8B0000; }
+.color-5 { background-color: #CD853F; }
+.color-6 { background-color: #A0522D; }
+.color-7 { background-color: #A0522D; }
+
+
+.color-info {
+  margin-top: 26px;
+  font-size: 14px;
+}
+
+.cta-button {
+  /* margin: 45px 0 0; */
+  /* margin: 0 auto; */
+  margin-top: 45px;
+  margin-bottom: 9px;
+  max-width: 311px;
+  min-height: 43px;
+  width: 311px;
+  border-radius: 5px;
+  background: #eb5825;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 43px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  /* margin-bottom: 9px; */
+  display: block;
+  /* height: 43px; */
+  position: relative;
+  font-weight: normal;
+}
+
+.cta-subtext {
+  margin-top: 11px;
+  color: #8a8a8a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 14px;
+  /* display: inline; */
+}
+
+
+
+.bottom-box {
+  background: yellow;
+  width: 100px;
+  height: 500px;
+  border: red 2px dotted;
+}
+
+.reviews-title {
+  display: block;
+}
+
+.reviews-box {
+  background: yellow;
+  width: 100px;
+  height: 500px;
+  border: red 2px dotted;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .recommendations-box {
+    order: 2;
+    /* display: block; */
+    width: 100%;
+    margin: 0;
+  }
+
+  .content-container {
+    order: 1;
+  }
 }
